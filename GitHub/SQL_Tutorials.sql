@@ -62,7 +62,21 @@ EXEC greetings3 /* show PROCEDURE */
 
 EXEC sp_help     /* help all tables and veiw */
 
-
 EXEC sp_help greetings3 /* help one table or veiw */
 
 EXEC sp_helptext greetings3  /* help one table or veiw */
+
+
+
+/* CREATE PROCEDURE with parameters  */
+CREATE  PROC  greetings4
+@empno int,@salary money
+AS 
+BEGIN
+SELECT empno from emp
+ where  empno=@empno and salary=@salary
+END;
+
+
+/* show PROCEDURE with parameters */
+EXEC greetings4 @empno=1245,@salary=411.0000
