@@ -38,8 +38,8 @@ GROUP BY empno;
 CREATE  PROC greetings2
 AS
 BEGIN
-   SELECT empno,salary+100 FROM EMP
-   where  empno=1245
+SELECT empno,salary+100 FROM EMP
+where  empno=1245
 END;
 
 
@@ -47,3 +47,22 @@ END;
 /* show PROCEDURE */ 
 
 exec greetings2
+
+
+
+/* CREATE PROCEDURE with encryption */
+CREATE  PROC  greetings3 with encryption
+AS 
+BEGIN
+SELECT empno,salary+100 FROM EMP
+ where  empno=1245
+END;
+
+EXEC greetings3 /* show PROCEDURE */
+
+EXEC sp_help     /* help all tables and veiw */
+
+
+EXEC sp_help greetings3 /* help one table or veiw */
+
+EXEC sp_helptext greetings3  /* help one table or veiw */
