@@ -1,0 +1,36 @@
+body
+{
+	    margin-top: 70px;
+	}
+	
+	.btd
+	{
+		margin-left: 30px;
+		}
+
+    .inputmar{
+
+         margin-top: 20px;
+    }
+    #form1{
+        width:40%;
+            margin: auto;
+    }
+    .headers{
+        margin-bottom: 50px;
+        font-size:60px;
+    }
+
+    .saction-f{
+           margin-bottom: 93px;
+    border-bottom: #737373;
+    border-bottom-style: dashed;
+    padding-bottom: 74px;
+    }
+.form-signin
+{
+	 width:40%;
+            margin: auto;
+	
+	}
+    
