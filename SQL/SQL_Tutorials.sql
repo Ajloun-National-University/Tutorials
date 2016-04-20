@@ -80,3 +80,18 @@ END;
 
 /* show PROCEDURE with parameters */
 EXEC greetings4 @empno=1245,@salary=411.0000
+
+
+/* SELECT Condition */
+SELECT empno,salary from emp
+where salary>300
+
+/* SELECT Condition 'And' */
+SELECT * FROM emp
+WHERE empno=1287
+AND salary>300;
+
+/* SELECT Condition 'And + OR' */
+SELECT * FROM emp
+WHERE empno=1287
+AND ( salary=1245 OR salary=4544);
