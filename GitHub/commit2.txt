@@ -1,0 +1,17 @@
+cd '/c/Users/Ehab K/Google Drive/Fileproject'
+git remote --url 
+git init
+git add *     OR      git add .           //  git add .
+git commit -m "initial commit"
+git push origin master 
+git pull 
+
+
+
+git clone URL // ÌáÈ ÇáãÔÑæÚ
+for EX : git clone https://github.com/Ajloun-National-University/Tutorials.git
+cd // ÊÚíä ãÓÇÑ
+ãËÇá 
+cd '/c/Users/Ehab K/Google Drive/ÊÕãíã ãäØÞ ÑÞãí'
+ls // ÑæíÉ ãáÝÇÊ ÇáÓÇÑ ÇáãÍÏÏ
+
